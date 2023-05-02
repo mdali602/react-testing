@@ -1,3 +1,21 @@
+
+# Refrence
+
+https://www.youtube.com/watch?v=9kPiq8-i-0M&list=PLC3y8-rFHvwirqe1KHFCHJ0RqNuN61SJd&index=5
+
+https://testing-library.com/docs/queries/byrole
+
+https://github.com/testing-library/jest-dom
+
+https://chrome.google.com/webstore/search/testing%20playground?hl=en
+
+https://mui.com/material-ui/getting-started/installation/
+
+https://jsonplaceholder.typicode.com/
+
+https://mswjs.io/docs/getting-started/install
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
