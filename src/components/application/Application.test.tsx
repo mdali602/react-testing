@@ -1,6 +1,10 @@
 import { render, screen } from '@testing-library/react'
 import Application from './Application'
 
+/* 
+Added test comment
+*/
+
 describe('Application', () => {
   test('should renders correctly', () => {
     render(<Application />)
@@ -51,7 +55,7 @@ describe('Application', () => {
     expect(termsElement).toBeInTheDocument()
 
     const termsElement2 = screen.getByLabelText(
-      'I agree to the terms and conditions'
+      'I agree to the terms and conditionss'
     )
     expect(termsElement2).toBeInTheDocument()
 
