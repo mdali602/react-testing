@@ -26,8 +26,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint --ignore-path .gitignore ./src",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,css,scss}\"",
-    "coverage": "react-scripts test --coverage --watchAll --collectCoverageFrom='src/components/**/*.{ts,tsx}' --collectCoverageFrom='!src/components/**/*.{types,stories,constants,test,spec}.{ts,tsx}'",
-    "prepare": "husky install"
+    "coverage": "react-scripts test --coverage --watchAll --collectCoverageFrom='src/components/**/*.{ts,tsx}' --collectCoverageFrom='!src/components/**/*.{types,stories,constants,test,spec}.{ts,tsx}'"
   },
   "eslintConfig": {
     "extends": [
@@ -63,7 +62,6 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-jest-dom": "^4.0.3",
     "msw": "^1.2.1",
-    "prettier": "^2.8.8",
-    "husky": "^8.0.0"
+    "prettier": "^2.8.8"
   }
 }
