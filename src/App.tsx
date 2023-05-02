@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { AppProviders } from './providers/app-providers'
+// import Application from "./components/application/Application";
+// import Skills from "./components/skills/Skills";
+// import Counter from "./components/counter/Counter";
+import { MuiMode } from './components/mui/mui-mode'
+import { CounterTwo } from './components/counter-two/CounterTwo'
+import { useCounter } from './hooks/use-counter/useCounter'
+import { Users } from './components/users/Users'
 
 function App() {
+  const { count, increament, decreament } = useCounter({ initialCount: 0 })
+  // const skills = ["HTML", "CSS", "JavaScript"];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <AppProviders>
+      <div className="App">
+        {/* <Application />
+      <hr />
+      <Skills skills={skills} />
+      <hr /> */}
+        {/* <Counter /> */}
+        <MuiMode />
+
+        <CounterTwo
+          count={count}
+          handleIncreament={increament}
+          handleDencreament={decreament}
+        />
+        <Users />
+      </div>
+    </AppProviders>
+  )
 }
 
-export default App;
+export default App
